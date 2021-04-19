@@ -1,0 +1,134 @@
+@font-face{
+  src: url(fonts/Inconsolata-Regular.ttf);
+  font-family: InconsolataRegular;
+}
+
+@font-face{
+  src: url(fonts/Inconsolata-Light.ttf);
+  font-family: InconsolataLight;
+}
+
+@font-face{
+  src: url(fonts/ABCDiatypeMono-Regular-Trial.otf);
+  font-family: DiatypeMonoRegular;
+}
+
+@font-face{
+  src: url(fonts/ABCDiatype-Regular-Trial.otf);
+  font-family: DiatypeRegular;
+}
+
+@font-face{
+  src: url(fonts/happy-times-NG_regular_master.otf);
+  font-family: HappyTimes;
+}
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left{
+  left: 0;
+}
+
+.right{
+right: 0;
+
+}
+
+body{
+  background-color: lightgray;
+  cursor: url(assets/cursor.png), pointer ;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: DiatypeMonoRegular;
+  text-align: left;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 18px;
+  font-family: DiatypeMonoRegular;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  text-align: justify;  
+  font-size: 16px;
+  font-family: DiatypeMonoRegular;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.imageHolder {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.image .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.image:hover .img-top {
+  display: inline;
+}
+
+.typeSampler{
+  padding-bottom: 50px;
+}
+
+#wrap { width: 665px; height: 665px; padding: 0; overflow: hidden; text-align: center; margin-left: auto; margin-right: auto;}
+#frame { width: 1000px; height: 1000px; border: 0px solid black;  text-align: center; margin-left: auto; margin-right: auto; }
+#frame {
+    -ms-zoom: 0.665;
+    -moz-transform: scale(0.665);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.665);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.665);
+    -webkit-transform-origin: 0 0;
+}
+
+.vl {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  height: fit-content;
+  position: absolute;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  display: block;
+}
+
+a img { display:none; }
+a:hover img { display:block; }
