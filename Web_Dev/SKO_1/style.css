@@ -10,7 +10,7 @@
 
 .split {
   height: 100%;
-  width: 50%;
+
   position: fixed;
   z-index: 1;
   top: 0;
@@ -20,9 +20,11 @@
 
 .left{
   left: 0;
+  width: 34%;
 }
 
 .right{
+width: 66%;
 right: 0;
 
 }
@@ -33,7 +35,7 @@ body{
 }
 
 .h {
-  font-size: 32px;
+  font-size: 26px;
   font-family: DiatypeMonoRegular;
   text-align: left;
   color: black;
@@ -99,22 +101,23 @@ p {
 }
 
 .typeSampler{
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
-#wrap { width: 665px; height: 665px; padding: 0; overflow: hidden; text-align: center; margin-left: auto; margin-right: auto;}
+#wrap { width: 750px; height: 750px; padding: 0; overflow: hidden; text-align: center; margin-left: auto; margin-right: auto;}
 #frame { width: 1000px; height: 1000px; border: 0px solid black;  text-align: center; margin-left: auto; margin-right: auto; }
 #frame {
-    -ms-zoom: 0.665;
-    -moz-transform: scale(0.665);
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
     -moz-transform-origin: 0 0;
-    -o-transform: scale(0.665);
+    -o-transform: scale(0.75);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.665);
+    -webkit-transform: scale(0.75);
     -webkit-transform-origin: 0 0;
 }
 
 .vl {
+  /* border-right: 2px solid black; */
   border-left: 2px solid black;
   height: fit-content;
   position: absolute;
