@@ -1,14 +1,4 @@
 @font-face{
-  src: url(fonts/Inconsolata-Regular.ttf);
-  font-family: InconsolataRegular;
-}
-
-@font-face{
-  src: url(fonts/Inconsolata-Light.ttf);
-  font-family: InconsolataLight;
-}
-
-@font-face{
   src: url(fonts/ABCDiatypeMono-Regular-Trial.otf);
   font-family: DiatypeMonoRegular;
 }
@@ -17,12 +7,6 @@
   src: url(fonts/ABCDiatype-Regular-Trial.otf);
   font-family: DiatypeRegular;
 }
-
-@font-face{
-  src: url(fonts/happy-times-NG_regular_master.otf);
-  font-family: HappyTimes;
-}
-
 
 .split {
   height: 100%;
@@ -44,8 +28,20 @@ right: 0;
 }
 
 body{
-  background-color: lightgray;
+  background-color: rgb(233, 231, 231);
   cursor: url(assets/cursor.png), pointer ;
+}
+
+.h {
+  font-size: 32px;
+  font-family: DiatypeMonoRegular;
+  text-align: left;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 h1 {
@@ -71,7 +67,7 @@ h2 {
 }
 
 p {
-  text-align: justify;  
+  text-align: left;  
   font-size: 16px;
   font-family: DiatypeMonoRegular;
   padding-top: 10px;
