@@ -104,15 +104,15 @@ p {
   padding-bottom: 100px;
 }
 
-#wrap { width: 750px; height: 750px; padding: 0; overflow: hidden; text-align: center; margin-left: auto; margin-right: auto;}
+#wrap { width: 650px; height: 650px; padding: 0; overflow: hidden; text-align: center; margin-left: auto; margin-right: auto;}
 #frame { width: 1000px; height: 1000px; border: 0px solid black;  text-align: center; margin-left: auto; margin-right: auto; }
 #frame {
-    -ms-zoom: 0.75;
-    -moz-transform: scale(0.75);
+    -ms-zoom: 0.65;
+    -moz-transform: scale(0.65);
     -moz-transform-origin: 0 0;
-    -o-transform: scale(0.75);
+    -o-transform: scale(0.65);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.75);
+    -webkit-transform: scale(0.65);
     -webkit-transform-origin: 0 0;
 }
 
@@ -130,3 +130,4 @@ p {
 
 a img { display:none; }
 a:hover img { display:block; }
+
