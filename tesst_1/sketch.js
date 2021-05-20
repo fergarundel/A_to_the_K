@@ -2,7 +2,7 @@ let glythCount=0;
 
 function setup() {
   createCanvas (windowWidth,windowHeight);
-  p = createP('Champagne Socialist');
+  p = createP('Champagne <br> Socialist');
 }
 
 function draw() {
