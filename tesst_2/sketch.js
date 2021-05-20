@@ -10,7 +10,6 @@ let emotionSmooth = 1;
 
 function setup() {
   createCanvas (windowWidth,windowHeight);
-  frameRate(300);
 
   video = createCapture(VIDEO);
   video.id('video');
@@ -60,17 +59,17 @@ function draw() {
 
      surprised = (nf(surprised * 1000,2,2));
      if (surprised > 500 && emotionSmooth < 999){
-       emotionSmooth=emotionSmooth + 30;
+       emotionSmooth=emotionSmooth + 50;
      }
 
      happy = (nf(happy * 1000,2,2));
      if (happy > 500 && emotionSmooth < 999){
-       emotionSmooth=emotionSmooth + 30;
+       emotionSmooth=emotionSmooth + 50;
      }
 
      neutral = (nf(neutral * 1000,2,2));
      if (neutral > 500 && emotionSmooth > 1){
-       emotionSmooth=emotionSmooth - 30;
+       emotionSmooth=emotionSmooth - 50;
      }
   } 
     
