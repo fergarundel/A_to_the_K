@@ -2,7 +2,7 @@ let glythCount=0;
 
 function setup() {
   createCanvas (windowWidth,windowHeight);
-  p = createP('A to the');
+  p = createP('Unnamed Variable');
 }
 
 function draw() {
