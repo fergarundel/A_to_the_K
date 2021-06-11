@@ -1,0 +1,387 @@
+@font-face{
+  font-family: 'ChampagneSocialist';
+  src: url('fonts/ChampagneSocialist-Variable.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+@font-face{
+  font-family: 'CoronaFace';
+  src: url('fonts/CoronaFaceImpactGX.ttf') format("truetype-variations");
+  font-weight: 0 100;
+}
+
+@font-face{
+  font-family: 'SquareRound';
+  src: url('fonts/BioSquare.otf')
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+}
+
+.left{
+  left: 0;
+  width: 34%;
+}
+
+.right{
+width: 66%;
+right:0;
+}
+
+.middle{
+  width: 33%;
+  right: 33%;
+  table-layout: fixed;
+  }
+
+.farRight{
+  width: 33%;
+  right: 0;
+}
+
+{box-sizing: border-box;}
+
+.column {
+float: left;
+width: 33vw;
+table-layout: fixed;
+margin: -1px;
+max-width: 33vw;
+}
+
+.row:after {
+content: "";
+display: inline-block;
+clear: both;
+border-bottom: 2px solid black;
+display: block;
+}
+
+
+body{
+  background-color:whitesmoke;
+  cursor: url(assets/black.png), pointer ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'ChampagneSocialist';
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none; 
+}
+
+.h {
+  font-size: clamp(14px,1.7vw,42px);
+  /* font-size: 1.7vw; */
+  display: inline-block;
+  text-align: left;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 130%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-height: 50vw;
+
+  font-variation-settings: "wght" 1;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.h:hover{
+  color: blue;
+  cursor: url(assets/blue.png), pointer;
+  font-variation-settings: "wght" 250;
+}
+
+h1{
+  font-size: clamp(14px,1.389vw,32px);
+  font-weight: 1;
+  text-align: left;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2{
+  text-align: left;
+  font-size: clamp(12px,1.25vw,28px);
+  font-weight: 1;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  text-align: left;  
+  font-size: clamp(11px,1.1vw,24px);
+  font-weight: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 130%;
+}
+
+.homeText{
+  font-size: 28vw;
+  text-align: center;
+  width: 66vw;
+  height: 99vh;
+  overflow: hidden;
+  line-height: 65%;
+
+  text-align: center;  
+  display:inline-block;
+  max-width: 66vw;
+  
+  transition: 0.3s ease;
+  animation-name: variable-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.center{
+  text-align: center; 
+}
+
+.sampler {
+  text-align: center;  
+  display:inline-block;
+  font-size: 120px;
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 6.060606%;
+  width: 87.8787%;
+  max-width: 58vw;
+}
+
+.sampler-bottom {
+  text-align: center;  
+  display:inline-block;
+  font-size: 120px;
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  padding-left: 5%;
+  padding-right: 100px;
+  width: 90%;
+}
+
+[contenteditable="true"]:focus{
+  outline: none;
+}
+
+[contenteditable]:hover{
+  transition: color ease 0.2s;
+  color: blue;
+  cursor: url(assets/blue.png), pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: url(assets/black.png), pointer ;
+}
+
+.link{
+  display:inline-block;
+  color: black;
+  font-weight: 1;
+  font-size: clamp(12px,1.25vw,28px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-variation-settings: "wght" 1;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.link:hover{
+  color: blue;
+  cursor: url(assets/blue.png), pointer;
+  font-variation-settings: "wght" 500;
+}
+
+.c {
+  display:inline-block;
+  text-align: left;  
+  font-size: clamp(11px,1.1vw,24px);
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 130%;
+}
+
+.link2 {
+  display:inline-block;
+  text-align: left;  
+  font-size: clamp(11px,1.1vw,24px);
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 130%;
+
+  font-variation-settings: "wght" 1;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.link2:hover{
+  color: blue;
+  cursor: url(assets/blue.png), pointer;
+
+  font-variation-settings: "wght" 500;
+}
+
+.samplerlink{
+  display: inline-block;
+  text-align: center;
+  font-size: clamp(14px,1.389vw,32px);
+  font-weight: 1;
+  text-align: left;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-variation-settings: "wght" 1;
+  transition: font-variation-settings 0.3s ease;
+}
+
+.samplerlink:hover{
+  color: blue;
+  cursor: url(assets/blue.png), pointer;
+  font-variation-settings: "wght" 500;
+}
+
+.bottom_space{
+  padding-bottom: 55px;
+}
+
+.right_bottom{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.imageHolder {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.image .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.image:hover .img-top {
+  display: inline;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: fit-content;
+  position: absolute;
+}
+
+.middleLine {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  height: fit-content;
+  position: absolute;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  display: block;
+}
+
+a img { display:none; }
+a:hover img { display:block; }
+
+@keyframes variable-animation{
+  from{font-weight: 1; }
+  to { font-weight: 999; }
+}
+
+@keyframes face-animation{
+  from {
+    font-variation-settings: "hscl" 0, "hdrs" 0, "fmsk" 0;
+  }
+  to {
+    font-variation-settings: "hscl" 100, "hdrs" 100, "fmsk" 100;
+  }
+}
+
+.face-animation {
+  font-family: "CoronaFace";
+  font-size: clamp(70px,25vw,400px);
+  text-align: center;  
+  display:inline-block;
+  font-weight: 1;
+  margin-bottom: -60px;
+  padding-left: 5%;
+  padding-right: 100px;
+  width: 90%;
+  
+  transition: 0.3s ease;
+  animation-name: face-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.variable-animation {
+  text-align: center;  
+  display:inline-block;
+  font-weight: 1;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 6.060606%;
+  width: 87.87878788%;
+  max-width: 58vw;
+  
+  transition: 0.3s ease;
+  animation-name: variable-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#myiframe{
+  min-width: 100%;
+  display: inline-block;
+}
